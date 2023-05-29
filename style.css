@@ -1,0 +1,1005 @@
+:root {
+    --background-color: #2B2B2B;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: var(--background-color);
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100px;
+    width: 1280px;
+    margin: auto;
+}
+
+.navbar_container_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 243.41px;
+    height: 32px;
+}
+
+.navbar_container_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.navbar_container_left>.navbar_text {
+    width: 199.41px;
+    height: 19.8px;
+    left: 44px;
+    top: 8.6px;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.links_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 607px;
+    height: 60px;
+}
+
+.links_container>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 12px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotPink;
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+    a {
+      background-color: skyblue;
+      background-image: -webkit-linear-gradient(left, #c245f3 0%, #2196f3 50%, transparent 30%);
+      background-position: 100% 0;
+      background-size: 200% 200%;
+      color: transparent;
+      transition: 0.1s 0.2s;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  
+    a:hover {
+      background-position: 0 0;
+      color: transparent;
+      transition: 0.4s 0;
+    }
+  }
+  
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    gap: 12px;
+    width: 152px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 1s ease, color 1.5s ease;
+}
+
+.button1:hover,
+.button1:focus {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+}
+
+.button1.enroll_icon::before {
+    content: url("./Assets/Icons/User.svg");
+    position: absolute;
+    top: 60%;
+    right: 110px;
+    transform: translateY(-60%);
+}
+
+.button1.enroll_icon {
+    padding-left: 60px;
+}
+
+.discover_section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 80px 0;
+    width: 1050px;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 510px;
+}
+
+.discover_text>h1 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.discover_text>p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.button2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 50px;
+    gap: 12px;
+    width: 224px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 1s ease, color 1.5s ease;
+}
+
+.button2:hover,
+.button2:focus {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+}
+
+.button2.enroll_icon::before {
+    content: url("./Assets/Icons/RocketLaunch.svg");
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+.button2.enroll_icon {
+    padding-left: 60px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 510px;
+    height: 77px;
+}
+
+.info>.total_sale,
+.info>.auctions,
+.info>.artists {
+    width: 150px;
+    height: 77px;
+}
+
+.info>.total_sale>h4:first-child,
+.info>.auctions>h4:first-child,
+.info>.artists>h4:first-child {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    /* White color */
+}
+
+.info>.total_sale>h4:last-child,
+.info>.auctions>h4:last-child,
+.info>.artists>h4:last-child {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 23.99px;
+    line-height: 160%;
+    color: #FFFFFF;
+    /* White color */
+}
+
+.right {
+    padding-left: 30px;
+}
+
+.space_walking_info {
+    padding: 20px;
+    gap: 10px;
+    width: 510px;
+    height: 109px;
+    background: #3B3B3B;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.space_walking_info>h5 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 12px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+/*Trending Collection section*/
+
+.trending_collection {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.trending_collection_container>.headline {
+    width: 1046px;
+    height: 91px;
+}
+
+.headline>h3 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.trending_cards {
+    margin-bottom: 80px;
+}
+
+.headline>h4 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+}
+
+.trending_cards_container {
+    margin-bottom: 80px;
+}
+
+.cards>img {
+    margin-right: 10px;
+}
+
+.main_card>img {
+    margin-right: 30px;
+}
+
+.main_card {
+    margin-bottom: 15px;
+}
+
+.dsgn_animals_text>h5,
+.magic_mushrooms_text>h5,
+.disco_machines_text>h5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.mrfox,
+.shroomie,
+.robots {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.mrfox>p,
+.shroomie>p,
+.robots>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.top_creators {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+    padding: 80px 0 60px 0;
+}
+
+.top_creators_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 100px;
+    width: 1050px;
+    height: 91px;
+
+}
+
+.drk_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 60px;
+    padding: 0px 20px;
+    border: 2px solid #A259FF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #2B2B2B;
+    position: relative;
+    text-align: center;
+    transition: background-color 1s ease, color 1.5s ease;
+    cursor: pointer;
+}
+
+
+.drk_button:hover,
+.drk_button:focus {
+    background: linear-gradient(90deg, #ae48e9, transparent) #2196f3;
+}
+
+.drk_button.enroll_icon::before {
+    content: url("./Assets/Icons/rocket_icon.svg");
+    position: absolute;
+    top: 60%;
+    left: 35px;
+    transform: translateY(-60%);
+}
+
+.drk_button.enroll_icon {
+    padding-left: 45px;
+}
+
+.top_creators_headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 703px;
+    height: 91px;
+
+}
+
+.top_creators_headline>h3 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.top_creators_headline>h4 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.creators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creators_cards_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.artists_cards_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1050px;
+    height: 238px;
+}
+
+.artist_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    isolation: isolate;
+    width: 240px;
+    height: 238px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.artist_card:hover {
+    box-shadow: 0 0 11px rgba(166, 20, 202, 0.2),
+        0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+    transform: scale(1.1);
+}
+
+
+
+.ranking_number {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    isolation: isolate;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 18px;
+    background: #2B2B2B;
+    border-radius: 20px;
+}
+
+.artist_info h5 {
+    width: 200px;
+    height: 31px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.artist_sales p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: #858584;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.categories_cards_container {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.category_cards_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1050px;
+    height: 316px;
+}
+
+.collection_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px 25px;
+    width: 240px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.category_card {
+    padding: 0px;
+    width: 240px;
+    height: 316px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+    transition: box-shadow 0.3s;
+}
+
+
+.category_card:hover {
+    box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+        0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+    transform: scale(1.1);
+}
+
+/*End of Category section*/
+
+.discover_nft {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.seeAll_btn {
+    width: 187px;
+}
+
+.seeAll_btn.enroll_icon::before {
+    content: url("./Assets/Icons/eye_icon.svg");
+    position: absolute;
+    top: 60%;
+    left: 45px;
+    transform: translateY(-60%);
+}
+
+.drk_button.enroll_icon {
+    padding-left: 45px;
+}
+
+.discover_nft_headline {
+    width: 763px;
+}
+
+.discover_nft_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.nft_cards_container {
+    width: 1050px;
+    margin: auto;
+    padding: 0;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.nft_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 330px;
+    height: 469px;
+    background: #3B3B3B;
+    border-radius: 20px;
+}
+
+.nft_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    width: 270px;
+    height: 60px;
+
+}
+
+.nft_artist {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 270px;
+    height: 24px;
+}
+
+.nft_name>h5 {
+    width: 270px;
+    height: 31px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.nft_artist>p {
+
+    width: 234px;
+    height: 22px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.additional_info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 270px;
+    height: 43px;
+
+}
+
+.nft_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px 25px;
+    gap: 25px;
+    width: 330px;
+    height: 173px;
+}
+
+.price>p:first-child {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #858584;
+    width: 114px;
+    height: 13px;
+    margin-bottom: 8px;
+}
+
+.price>p:last-child {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    width: 114px;
+    height: 22px;
+}
+
+.highest_bid>p:first-child {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    text-align: right;
+    color: #858584;
+    width: 135px;
+    height: 22px;
+}
+
+.highest_bid>p:last-child {
+    width: 135px;
+    height: 22px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+/*End of How it works section*/
+.nft_highlight {
+    background-image: url(./Assets/Images/nft_highlight.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+    width: 1280px;
+    height: 640px;
+    margin-bottom: 80px;
+    object-fit: fill;
+
+}
+
+.nft_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    z-index: 7;
+    position: relative;
+    width: 1280px;
+    height: 660px;
+    color: #c245f3;
+    font-size: 13px;
+}
+
+/*End of NFT Highlights section*/
+.subscribe_widget,
+.how_it_works,
+.info_cards {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.how_it_works_container,
+.info_cards_container {
+    padding: 0;
+}
+
+.info_cards_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 1050px;
+    height: 439px;
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+
+.info_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px 30px;
+    gap: 20px;
+    width: 330px;
+    height: 439px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.6s;
+}
+
+.info_card:hover {
+    box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+        0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+    transform: scale(1.1);
+}
+
+.card_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 270px;
+    height: 129px;
+}
+
+.card_details>h5 {
+    width: 270px;
+    height: 31px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.card_details>p {
+    width: 270px;
+    height: 88px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe_widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px;
+    gap: 80px;
+    width: 1050px;
+    height: 430px;
+    background: #3B3B3B;
+    border-radius: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 425px;
+    height: 272px;
+}
+
+.right>h3 {
+    width: 425px;
+    height: 92px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.right>p {
+    width: 425px;
+    height: 70px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+#email_input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 0px 16px 20px;
+    gap: 12px;
+    width: 425px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2B2B2B;
+}
+
+.subscribe_btn {
+    align-items: center;
+    padding: 0px 50px;
+    gap: 12px;
+    width: 211px;
+    height: 60px;
+    background: #A259FF;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 1s ease, color 1.5s ease;
+}
+
+.subscribe_btn:hover,
+.subscribe_btn:focus {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+}
+
+.email_subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.subscribe_btn.enroll_icon::before {
+    content: url("./Assets/Icons/envelope_icon.svg");
+    position: absolute;
+    top: 60%;
+    left: 45px;
+    transform: translateY(-60%);
+}
+
+.subscribe_btn.enroll_icon {
+    padding-left: 65px;
+}
+
+/*End of Email Subscribe section*/
