@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar_container">
+            <div class="navbar_container_left">
+                <div class="logo">
+                    <img src="./Assets/Icons/Storefront.svg" class="page_icon" alt="page icon">
+                </div>
+                <h3 class="navbar_text"> NFT Marketplace</h3>
+            </div>
+            <div class="navbar_container_right">
+                <div class="links_container">
+                    <a href="../marketPlace/index.html">Marketplace</a>
+                    <a href="../rankingsPage/index.html">Rankings</a>
+                    <a href="#">Connect a Wallet</a>
+                </div>
+                <button class="button enroll_icon">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <section class="create_account">
+        <div class="create_account_section">
+            <div class="left_section">
+                <img src="./Assets/Images/Image Placeholder.png" alt="">
+            </div>
+            <div class="right_section">
+                <div class="headline">
+                    <h2>Create Account</h2>
+                    <p>Welcome! enter your details and start creating, collecting and selling NFTs.</p>
+                </div>
+                <div class="form">
+                    <div class="type_forms">
+                      <input id="username" placeholder="Username" type="text">
+                      <span id="username_error"></span>
+                      <input id="emailAdress" placeholder="Email Address" type="text">
+                      <span id="email_error"></span>
+                      <input id="password" placeholder="Password" type="password">
+                      <span id="password_error"></span>
+                      <input id="confirmPassword" placeholder="Confirm Password" type="password">
+                      <span id="confirmPassword_error"></span>
+                    </div>
+                    <button class="button createBtn">Create account</button>
+                  </div>
+                  
+        </div>
+    </section>
+    <footer>
+        <div class="footer_info">
+            <div class="marketplace">
+                <div class="footer_logo">
+                    <img src="./Assets/Icons/Storefront.svg" alt="">
+                    <h5>NFT Marketplace</h5>
+                </div>
+                <div class="additional_info">
+                    <p>NFT marketplace UI created with Anima for Figma.</p>
+                    <div class="community_info">
+                        <p>Join our community</p>
+                        <div class="icons">
+                            <img src="./Assets/Icons/discordlogo.svg" alt="">
+                            <img src="./Assets/Icons/youtube_logo.svg" alt="">
+                            <img src="./Assets/Icons/twitter_logo.svg" alt="">
+                            <img src="./Assets/Icons/instagram_logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore">
+                <h5>Explore</h5>
+                <div class="pages">
+                    <a href="#">Marketplace</a>
+                    <a href="#">Rankings</a>
+                    <a href="#">Connect a wallet</a>
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <h5>Join our weekly digest</h5>
+                <div class="form_info">
+                    <p>Get exclusive promotions & updates straight to your inbox.</p>
+                    <div class="email_subscribe">
+                        <input id="email_input" placeholder="Enter your email here" type="email">
+                        <button class="subscribe_btn enroll_icon" id="footer_button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <hr class="divider">
+            <p>Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <div id="toast-container"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
