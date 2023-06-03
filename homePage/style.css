@@ -1,6 +1,10 @@
 :root {
     --background-color: #2B2B2B;
-
+    --secondary-color: #3B3B3B;
+    --button-color: #A259FF;
+    --text-color: #FFFFFF;
+    --text-color-artist: #858584;
+    --text-color-footer: #CCCCCC;
 }
 
 * {
@@ -43,7 +47,7 @@ body {
     height: 19.8px;
     left: 44px;
     top: 8.6px;
-    color: #FFFFFF;
+    color: var(--text-color);
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -70,7 +74,7 @@ body {
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     cursor: pointer;
     text-decoration: none;
 }
@@ -107,7 +111,7 @@ a:hover {
     gap: 12px;
     width: 152px;
     height: 60px;
-    background: #A259FF;
+    background: var(--button-color);
     border-radius: 20px;
     border: none;
     position: relative;
@@ -169,7 +173,7 @@ a:hover {
     display: flex;
     align-items: center;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -180,7 +184,7 @@ a:hover {
     font-size: 22px;
     line-height: 160%;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .button2 {
@@ -192,14 +196,14 @@ a:hover {
     gap: 12px;
     width: 224px;
     height: 60px;
-    background: #A259FF;
+    background: var(--button-color);
     border-radius: 20px;
     border: none;
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     position: relative;
     cursor: pointer;
     transition: background-color 1s ease, color 1.5s ease;
@@ -242,15 +246,12 @@ a:hover {
 .info>.auctions>h4:first-child,
 .info>.artists>h4:first-child {
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 140%;
     display: flex;
     align-items: center;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    /* White color */
+    color: var(--text-color);
 }
 
 .info>.total_sale>h4:last-child,
@@ -260,8 +261,7 @@ a:hover {
     font-weight: 400;
     font-size: 23.99px;
     line-height: 160%;
-    color: #FFFFFF;
-    /* White color */
+    color: var(--text-color);
 }
 
 .right {
@@ -273,17 +273,16 @@ a:hover {
     gap: 10px;
     width: 510px;
     height: 109px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 0px 0px 20px 20px;
 }
 
 .space_walking_info>h5 {
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .avatar {
@@ -292,11 +291,10 @@ a:hover {
     margin-top: 10px;
     gap: 12px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 /*Trending Collection section*/
@@ -317,7 +315,7 @@ a:hover {
     font-weight: 600;
     font-size: 38px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -350,7 +348,7 @@ a:hover {
     font-weight: 400;
     font-size: 22px;
     line-height: 160%;
-    color: #FFFFFF;
+    color: var(--text-color);
     text-transform: capitalize;
 }
 
@@ -379,8 +377,7 @@ a:hover {
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-top: 15px;
 }
 
@@ -399,7 +396,7 @@ a:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .top_creators {
@@ -428,14 +425,14 @@ a:hover {
     width: 247px;
     height: 60px;
     padding: 0px 20px;
-    border: 2px solid #A259FF;
+    border: 2px solid var(--button-color);
     border-radius: 20px;
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #2B2B2B;
+    color: var(--text-color);
+    background-color: var(--background-color);
     position: relative;
     text-align: center;
     transition: background-color 1s ease, color 1.5s ease;
@@ -468,23 +465,20 @@ a:hover {
     gap: 10px;
     width: 703px;
     height: 91px;
-
 }
 
 .top_creators_headline>h3 {
     font-weight: 600;
     font-size: 38px;
     line-height: 120%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .top_creators_headline>h4 {
     font-weight: 400;
     font-size: 22px;
     line-height: 160%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .creators {
@@ -521,7 +515,7 @@ a:hover {
     isolation: isolate;
     width: 240px;
     height: 238px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 20px;
     position: relative;
     cursor: pointer;
@@ -547,7 +541,7 @@ a:hover {
     height: 30px;
     left: 20px;
     top: 18px;
-    background: #2B2B2B;
+    background: var(--background-color);
     border-radius: 20px;
 }
 
@@ -555,13 +549,11 @@ a:hover {
     width: 200px;
     height: 31px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
     text-align: center;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-bottom: 5px;
 }
 
@@ -572,7 +564,7 @@ a:hover {
     font-size: 16px;
     line-height: 140%;
     text-align: right;
-    color: #858584;
+    color: var(--text-color-artist);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -613,19 +605,17 @@ a:hover {
     align-items: flex-start;
     padding: 20px 30px 25px;
     width: 240px;
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .category_card {
     padding: 0px;
     width: 240px;
     height: 316px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
@@ -691,7 +681,7 @@ a:hover {
     padding: 0px;
     width: 330px;
     height: 469px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
@@ -732,12 +722,10 @@ a:hover {
     width: 270px;
     height: 31px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .nft_artist>p {
@@ -749,7 +737,7 @@ a:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .additional_info {
@@ -777,7 +765,7 @@ a:hover {
     font-weight: 400;
     font-size: 12px;
     line-height: 110%;
-    color: #858584;
+    color: var(--text-color-artist);
     width: 114px;
     height: 13px;
     margin-bottom: 8px;
@@ -785,11 +773,10 @@ a:hover {
 
 .price>p:last-child {
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: var(--text-color);
     width: 114px;
     height: 22px;
 }
@@ -801,7 +788,7 @@ a:hover {
     font-size: 12px;
     line-height: 110%;
     text-align: right;
-    color: #858584;
+    color: var(--text-color-artist);
     width: 135px;
     height: 22px;
 }
@@ -810,12 +797,11 @@ a:hover {
     width: 135px;
     height: 22px;
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     text-align: right;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 /*End of Discover more NFTs section*/
@@ -859,7 +845,7 @@ a:hover {
     gap: 20px;
     width: 330px;
     height: 439px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 20px;
     cursor: pointer;
     transition: box-shadow 0.6s;
@@ -886,25 +872,22 @@ a:hover {
     width: 270px;
     height: 31px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
     text-align: center;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .card_details>p {
     width: 270px;
     height: 88px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .subscribe_widget {
@@ -915,7 +898,7 @@ a:hover {
     gap: 80px;
     width: 1050px;
     height: 430px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
     border-radius: 20px;
     margin-bottom: 80px;
 }
@@ -933,24 +916,20 @@ a:hover {
     width: 425px;
     height: 92px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 38px;
     line-height: 120%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .right>p {
     width: 425px;
     height: 70px;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 160%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 #email_input {
@@ -961,11 +940,10 @@ a:hover {
     gap: 12px;
     width: 425px;
     height: 60px;
-    background: #FFFFFF;
+    background: var(--text-color);
     border-radius: 20px;
     border: none;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -978,7 +956,7 @@ a:hover {
     gap: 12px;
     width: 211px;
     height: 60px;
-    background: #A259FF;
+    background: var(--button-color);
     border-radius: 20px;
     border: none;
     position: absolute;
@@ -988,7 +966,7 @@ a:hover {
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     cursor: pointer;
     transition: background-color 1s ease, color 1.5s ease;
 }
@@ -1114,7 +1092,7 @@ footer {
     margin: auto;
     width: 100%;
     height: 334px;
-    background: #3B3B3B;
+    background: var(--secondary-color);
 }
 
 .footer_info {
@@ -1141,7 +1119,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .additional_info_footer {
@@ -1159,7 +1137,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #CCCCCC;
+    color: var(--text-color-footer);
 }
 
 .community_info {
@@ -1178,7 +1156,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #CCCCCC;
+    color: var(--text-color-footer);
 }
 
 .explore {
@@ -1193,12 +1171,10 @@ footer {
 
 .explore>h5 {
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 160%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .pages {
@@ -1213,33 +1189,29 @@ footer {
 
 .pages>a {
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     text-decoration: none;
-    color: #CCCCCC;
+    color: var(--text-color-footer);
 }
 
 .footer_subscribe>h5 {
     font-family: 'Space Mono';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 160%;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .form_info>p {
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     width: 330px;
     height: 44px;
-    color: #CCCCCC;
+    color: var(--text-color-footer);
     margin-top: 25px;
 }
 
@@ -1251,15 +1223,14 @@ footer {
     gap: 12px;
     width: 425px;
     height: 60px;
-    background: #FFFFFF;
+    background: var(--text-color);
     border-radius: 20px;
     border: none;
     font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: #2B2B2B;
+    color: var(--background-color);
     outline: none;
 }
 
@@ -1269,7 +1240,7 @@ footer {
     gap: 12px;
     width: 211px;
     height: 60px;
-    background: #A259FF;
+    background: var(--button-color);
     border-radius: 20px;
     border: none;
     position: absolute;
@@ -1279,7 +1250,7 @@ footer {
     font-size: 16px;
     line-height: 140%;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     cursor: pointer;
     transition: background-color 1s ease, color 1.5s ease;
 }
@@ -1310,7 +1281,7 @@ footer {
 
 .divider {
     width: 1049.41px;
-    border: 1px solid #858584;
+    border: 1px solid var(--text-color-artist);
 }
 
 .frame>p {
@@ -1318,5 +1289,5 @@ footer {
     font-size: 12px;
     line-height: 110%;
     margin-top: 20px;
-    color: #CCCCCC;
+    color: var(--text-color-footer);
 }
