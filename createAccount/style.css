@@ -20,7 +20,6 @@ body {
     align-items: center;
     padding: 20px 50px;
     height: 100px;
-    width: 1280px;
     margin: auto;
 }
 
@@ -205,9 +204,6 @@ a:hover {
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-
-    width: 330px;
-    height: 305px;
 }
 
 .type_forms {
@@ -215,9 +211,8 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 15px;
-    width: 330px;
-    height: 229px;
+    gap: 20px;
+
     position: relative;
 }
 
@@ -327,7 +322,6 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
   }
   
-  /* Adjust styling as needed */
   
 .subscribe_btn {
     margin-left: 10px;

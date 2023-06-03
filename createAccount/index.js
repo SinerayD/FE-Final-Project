@@ -85,9 +85,6 @@ function isAnyInputEmpty() {
     confirmPasswordInput.value.trim() === ""
   );
 }
-
-// Rest of the code remains the same
-
 const usernameInput = document.getElementById("username");
 const usernameErrorMessage = document.getElementById("username_error");
 
@@ -171,15 +168,25 @@ function validateConfirmPassword() {
     return true;
   }
 }
-
+console.log();
 //Create Account toast message
 const createAccountBtn = document.querySelector(".createBtn");
 
 createAccountBtn.addEventListener("click", createAccount);
 
 function createAccount() {
- 
-  showToast("Account created successfully");
+  let count =0
+  const inputs=document.querySelectorAll(".type_forms >input")
+  inputs.forEach((input)=>{
+    console.log(input.value);
+    if(input.value==""){
+      showToast("Error");
+      count++;
+      return;
+    }
+  })
+ if(count ==0){
+  showToast("Account created successfully");}
 }
 
 function showToast(message) {

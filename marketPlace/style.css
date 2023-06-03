@@ -20,7 +20,6 @@ body {
     align-items: center;
     padding: 20px 50px;
     height: 100px;
-    width: 1280px;
     margin: auto;
 }
 
@@ -147,7 +146,6 @@ a:hover {
     align-items: center;
     padding: 80px 0px;
     gap: 40px;
-    width: 1280px;
     height: 351px;
     margin: auto;
 }
@@ -264,6 +262,7 @@ a:hover {
 }
 
 .nft_card_section {
+    
     padding-top: 60px;
 }
 
@@ -386,19 +385,6 @@ a:hover {
     border-radius: 20px;
     cursor: pointer;
     position: relative;
-}
-
-.nft_card {
-    box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
-    transition: box-shadow 0.3s;
-    transition: 0.3s;
-}
-
-
-.nft_card:hover {
-    box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
-        0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
-    transform: scale(1.1);
 }
 
 .nft_artist {
@@ -743,6 +729,10 @@ footer {
 
 @media only screen and (max-width: 1050px) {
 
+    .container {
+        width: 680px;
+    }
+
     .nft_card_section {
         display: flex;
         flex-direction: column;
@@ -776,23 +766,10 @@ footer {
         display: none;
     }
 
-    .nft_card {
-        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
-        transition: box-shadow 0.3s;
-        transition: 0.3s;
-    }
-
     .nft_card>img {
         width: 325px;
 
     }
-
-    .nft_card:hover {
-        box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
-            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
-        transform: scale(1.1);
-    }
-
     .nft_artist {
         display: flex;
         flex-direction: row;
@@ -815,6 +792,7 @@ footer {
         align-items: flex-start;
         padding: 0px;
         gap: 30px;
+        width: 100vw;
     }
 
     .headline {
@@ -823,6 +801,7 @@ footer {
         align-items: flex-start;
         padding: 0px;
         gap: 10px;
+        width: 100vw;
 
     }
 
@@ -900,6 +879,7 @@ footer {
         justify-content: center;
         padding: 12px 0px;
         height: 60px;
+        width: 100vw;
     }
 
     .search>img {
@@ -966,199 +946,5 @@ footer {
 
 
 @media only screen and (max-width: 690px) {
-    .welcome_market {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0px;
-        gap: 40px;
-        background: #2b2b2b;
-
-        .market_container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 30px;
-            width: 315px;
-
-            .market_top {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-
-            .market_bottom {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 12px 0px;
-                gap: 10px;
-                border: 1px solid #3b3b3b;
-                border-radius: 20px;
-                width: 100%;
-
-                .input_div {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 0px 20px;
-                    width: 100%;
-
-                    >input {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        padding: 0px;
-                        gap: 20px;
-                        border: none;
-                        background: none;
-                        color: white;
-
-                        ::placeholder {
-                            font-size: 16px;
-                            line-height: 22px;
-                        }
-
-                        &:focus {
-                            outline: none;
-                        }
-                    }
-
-                    .input_div {
-                        width: 24px;
-                        height: 24px;
-                    }
-                }
-            }
-        }
-    }
-
-    .info_container {
-        width: 315px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .market_cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        background: #3b3b3b;
-
-        .market_container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 0px;
-            gap: 30px;
-            width: 315px;
-
-            .top_card,
-            .mid_card,
-            .mid_card2,
-            .bottom_card,
-            .cards {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-
-                .card {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0px;
-                    width: 315px;
-                    background: #2b2b2b;
-                    border-radius: 20px;
-                    transition: 0.3s;
-                    cursor: pointer;
-
-                    &:nth-child(2),
-                    &:nth-child(3) {
-                        display: none;
-                    }
-
-                    &:hover {
-                        transform: scale(0.96);
-                    }
-
-                    .market_image {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                        border-radius: 20px 20px 0px 0px;
-                        position: relative;
-
-                        & img:first-child {
-                            width: 100%;
-                        }
-
-                        .heart {
-                            position: absolute;
-                            right: 15px;
-                            top: 15px;
-                        }
-                    }
-
-                    .market_card_info {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        padding: 20px 20px 25px;
-                        gap: 25px;
-                        width: 100%;
-
-                        .info_top {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            padding: 0px;
-                            gap: 5px;
-
-                            h5 {
-                                font-family: "Work Sans";
-                            }
-
-                            .info_top_avatar {
-                                display: flex;
-                                flex-direction: row;
-                                align-items: flex-start;
-                                align-items: center;
-                                gap: 12px;
-                            }
-                        }
-
-                        .info_bottom {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 0px;
-                            width: 270px;
-
-                            .info_left {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                padding: 0px 21px 0px 0px;
-                                gap: 8px;
-                            }
-
-                            .info_right {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                padding: 0px;
-                                gap: 8px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
 }

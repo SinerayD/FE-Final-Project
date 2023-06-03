@@ -1,19 +1,29 @@
+//Add to favorites code
 const nftCards = document.querySelectorAll('.nft_card');
+let count = 0;
 
 nftCards.forEach(card => {
-
   const heartButton = document.createElement('div');
   heartButton.id = 'heart';
   heartButton.classList.add('button');
 
   heartButton.addEventListener('click', function() {
-   
     this.classList.toggle('red');
+    if (this.classList.contains('red')) {
+      count++;
+    } else {
+      count--;
+    }
+    updateCircleNumber();
   });
 
   card.insertBefore(heartButton, card.firstChild);
 });
 
+function updateCircleNumber() {
+  const circleNumber = document.querySelector('.circle');
+  circleNumber.textContent = count.toString();
+}
 
 
 // Search Engine code
