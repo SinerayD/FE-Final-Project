@@ -91,8 +91,8 @@ nftsSoldBtn.addEventListener("click", () => {
 //Sign Up button navigation page code
 const signUpButton = document.querySelector('.button1.enroll_icon');
 
-signUpButton.addEventListener('click', function() {
-  window.location.href = "../createAccount/index.html";
+signUpButton.addEventListener('click', function () {
+    window.location.href = "../createAccount/index.html";
 });
 
 const changeElement = document.getElementById("change");
@@ -100,21 +100,22 @@ const changeElement = document.getElementById("change");
 let isDescending = false;
 
 changeElement.addEventListener("click", () => {
-  const tableRows = Array.from(document.getElementsByClassName("table_row"));
+    const tableRows = Array.from(document.getElementsByClassName("table_row"));
 
-  tableRows.sort((a, b) => {
-    const changeValueA = parseFloat(a.getElementsByClassName("right_row")[0].querySelector("span").innerText);
-    const changeValueB = parseFloat(b.getElementsByClassName("right_row")[0].querySelector("span").innerText);
-    if (isDescending) {
-      return changeValueB - changeValueA; 
-    } else {
-      return changeValueA - changeValueB; 
-    }
-  });
+    tableRows.sort((a, b) => {
+        const changeValueA = parseFloat(a.getElementsByClassName("right_row")[0].querySelector("span").innerText);
+        const changeValueB = parseFloat(b.getElementsByClassName("right_row")[0].querySelector("span").innerText);
+        if (isDescending) {
+            return changeValueB - changeValueA;
+        } else {
+            return changeValueA - changeValueB;
+        }
+    });
 
-  isDescending = !isDescending;
+    isDescending = !isDescending;
 
-  const rankingsSection = document.querySelector(".rankings");
-  tableRows.forEach(row => row.remove());
-  tableRows.forEach(row => rankingsSection.appendChild(row));
+    const rankingsSection = document.querySelector(".rankings");
+    tableRows.forEach(row => row.remove());
+    tableRows.forEach(row => rankingsSection.appendChild(row));
 });
+

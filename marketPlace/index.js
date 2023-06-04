@@ -7,7 +7,7 @@ const addHeartButtons = () => {
     heartButton.id = 'heart';
     heartButton.classList.add('button');
 
-    heartButton.addEventListener('click', function() {
+    heartButton.addEventListener('click', function () {
       this.classList.toggle('red');
       const card = this.closest('.nft_card');
       setLocal(card);
@@ -25,24 +25,27 @@ const setLocal = (card) => {
   const imgSrc = img.getAttribute('src');
   const nftName = card.querySelector('.nft_name h5').innerHTML;
   const nftArtist = card.querySelector('.nft_name .nft_artist p').innerHTML;
-  const additionalInfo=card.querySelector('.additional_info');
+  const additionalInfo = card.querySelector('.additional_info');
 
   const obj = {
+
     imgSrc: imgSrc,
     nftName: nftName,
     nftArtist: nftArtist,
-    additionalInfo:add
+    additionalInfo: additionalInfo
+
+
   };
 
   if (favorites.some(favorite => favorite.imgSrc === imgSrc)) {
-    
+
     const updatedFavorites = favorites.filter(favorite => favorite.imgSrc !== imgSrc);
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-    updateCircleNumber(updatedFavorites.length); 
+    updateCircleNumber(updatedFavorites.length);
   } else {
     favorites.push(obj);
     localStorage.setItem('favorites', JSON.stringify(favorites));
-    updateCircleNumber(favorites.length); 
+    updateCircleNumber(favorites.length);
   }
 };
 
@@ -53,29 +56,29 @@ function updateCircleNumber(count) {
 
 addHeartButtons();
 
- 
+
 // Search Engine code
 const searchInput = document.getElementById('search_nft');
-
+const nftCards = document.querySelectorAll('.nft_card');
 searchInput.addEventListener('input', function () {
-    const searchTerm = searchInput.value.toLowerCase();
+  const searchTerm = searchInput.value.toLowerCase();
 
-    nftCards.forEach(function (nftCard) {
-        const nftName = nftCard.querySelector('.nft_name h5').textContent.toLowerCase();
+  nftCards.forEach(function (nftCard) {
+    const nftName = nftCard.querySelector('.nft_name h5').textContent.toLowerCase();
 
-        if (nftName.includes(searchTerm)) {
-            nftCard.style.display = 'block';
-        } else {
-            nftCard.style.display = 'none';
-        }
-    });
+    if (nftName.includes(searchTerm)) {
+      nftCard.style.display = 'block';
+    } else {
+      nftCard.style.display = 'none';
+    }
+  });
 });
 
 
 //Sign Up button navigation page code
 const signUpButton = document.querySelector('.button1.enroll_icon');
 
-signUpButton.addEventListener('click', function() {
+signUpButton.addEventListener('click', function () {
   window.location.href = "../createAccount/index.html";
 });
 

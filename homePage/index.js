@@ -1,3 +1,4 @@
+//Email input validation and toast message
 function validateEmail(email) {
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return emailRegex.test(email);
@@ -6,30 +7,14 @@ function validateEmail(email) {
 function showSuccessToast() {
     const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
-    toast.className = 'toast show success'; // Add the "success" class
-    toast.innerHTML = '<i class="fas fa-check-circle"></i> Subscription successful!'; // Add success icon
+    toast.className = 'toast show success';
+    toast.innerHTML = '<i class="fas fa-check-circle"></i> Subscription successful!'; 
     toastContainer.appendChild(toast);
   
     setTimeout(function () {
       toast.classList.remove('show');
-      toast.style.backgroundColor = 'green'; // Set the background color to green
-      setTimeout(() => {
-        toast.remove();
-      }, 500);
-    }, 2000);
-  }
-  
+      toast.style.backgroundColor = 'green'; 
 
-function showErrorToast() {
-    const toastContainer = document.getElementById('toast-container');
-    const toast = document.createElement('div');
-    toast.className = 'toast show error'; // Add the "error" class
-    toast.textContent = 'Please enter a valid email address!';
-    toastContainer.appendChild(toast);
-    
-    setTimeout(function () {
-      toast.classList.remove('show');
-      toast.style.backgroundColor = 'red'; // Set the background color to red
       setTimeout(() => {
         toast.remove();
       }, 300);
@@ -37,6 +22,21 @@ function showErrorToast() {
   }
   
 
+function showErrorToast() {
+    const toastContainer = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = 'toast show error'; 
+    toast.innerHTML = '<i class="fa fa-exclamation-circle" aria-hidden="true"></i> Please enter a valid email address!';
+    toastContainer.appendChild(toast);
+    
+    setTimeout(function () {
+      toast.classList.remove('show');
+      toast.style.backgroundColor = 'red'; 
+      setTimeout(() => {
+        toast.remove();
+      }, 300);
+    }, 2000);
+  }
 
 document.querySelector('.subscribe_btn').addEventListener('click', function () {
     const emailInput = document.getElementById('email_input');
@@ -50,6 +50,7 @@ document.querySelector('.subscribe_btn').addEventListener('click', function () {
     }
 });
 
+//Direct to artis page code
 const artistCards = document.querySelectorAll('.artist_card');
 
 artistCards.forEach(element => {
