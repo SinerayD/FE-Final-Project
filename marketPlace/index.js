@@ -31,7 +31,7 @@ const setLocal = (card) => {
     imgSrc: imgSrc,
     nftName: nftName,
     nftArtist: nftArtist,
-    additionalInfo:additionalInfo,
+    additionalInfo:add
   };
 
   if (favorites.some(favorite => favorite.imgSrc === imgSrc)) {

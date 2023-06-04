@@ -18,28 +18,31 @@ body {
     background: var(--background-color);
 }
 
+nav {
+    padding: 20px 50px;
+}
+
 .navbar_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    height: 100px;
-    margin: auto;
 }
 
 .navbar_container_left {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    padding: 0px;
     gap: 10px;
-    width: 243.41px;
-    height: 32px;
+
 }
 
 .navbar_container_right {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
+    align-items: center;
+    gap: 10px
 }
 
 .navbar_container_left>.navbar_text {
@@ -1290,4 +1293,1929 @@ footer {
     line-height: 110%;
     margin-top: 20px;
     color: var(--text-color-footer);
+}
+
+.burger_icon {
+    display: none;
+}
+
+/*assddsdfghgnfngnmjkj,jhmhngfdfghjklkjhngbfvxdcfgdhjkl/kl.j,hj*/
+@media screen and (max-width: 1050px) {
+    .burger_icon {
+        display: initial;
+    }
+
+    nav {
+        padding: 15px 50px;
+    }
+
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar_container_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+    }
+
+    .navbar_container_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px
+    }
+
+    .navbar_container_left>.navbar_text {
+        width: 199.41px;
+        height: 19.8px;
+        left: 44px;
+        top: 8.6px;
+        color: var(--text-color);
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .links_container {
+        display: none;
+    }
+
+    .links_container>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 12px;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: hotPink;
+    }
+
+    .button1 {
+        display: none;
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 690px;
+    }
+
+    .discover_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+        gap: 30px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 330px;
+        height: 381px;
+    }
+
+    .discover_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+
+
+    .discover_text>h1 {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        /* or 46px */
+
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+
+    .discover_text>p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .button2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: -1px 50px;
+        gap: 12px;
+        width: 224px;
+        height: 60px;
+        background: var(--button-color);
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        position: relative;
+        cursor: pointer;
+        transition: background-color 1s ease, color 1.5s ease;
+    }
+
+    .button2:hover,
+    .button2:focus {
+        background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    }
+
+    .button2.enroll_icon::before {
+        content: url("./Assets/Icons/RocketLaunch.svg");
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+    }
+
+    .button2.enroll_icon {
+        padding-left: 60px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 330px;
+        height: 57px;
+        border-radius: 20px;
+
+    }
+
+    .info>.total_sale,
+    .info>.auctions,
+    .info>.artists {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 90px;
+        height: 57px;
+        border-radius: 20px;
+    }
+
+    .info>.total_sale>h4:first-child,
+    .info>.auctions>h4:first-child,
+    .info>.artists>h4:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    .info>.total_sale>h4:last-child,
+    .info>.auctions>h4:last-child,
+    .info>.artists>h4:last-child {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .right {
+        width: 330px;
+        height: 221px;
+        padding-left: 30px;
+    }
+
+    .right>img {
+        width: 100%;
+    }
+
+    .space_walking_info {
+        width: 100%;
+        background: var(--secondary-color);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .space_walking_info>h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 12px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    /*Trending Collection section*/
+
+    .trending_collection {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .trending_collection_container>.headline {
+        width: 1046px;
+        height: 91px;
+    }
+
+    .headline>h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    .trending_cards {
+        margin-bottom: 80px;
+    }
+
+    .main_card {
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+
+    .main_card:hover {
+        transform: scale(1.1);
+    }
+
+    .cards>img {
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+    }
+
+
+    .cards>img:hover {
+        transform: scale(1.1);
+    }
+
+    .headline>h4 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+        text-transform: capitalize;
+    }
+
+    .trending_cards_container {
+        margin-bottom: 80px;
+    }
+
+    .cards>img {
+        margin-right: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .main_card>img {
+        margin-right: 30px;
+    }
+
+    .main_card {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .dsgn_animals_text>h5,
+    .magic_mushrooms_text>h5,
+    .disco_machines_text>h5 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+        margin-top: 15px;
+    }
+
+    .mrfox,
+    .shroomie,
+    .robots {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .mrfox>p,
+    .shroomie>p,
+    .robots>p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .top_creators {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+        padding: 80px 0 60px 0;
+    }
+
+    .top_creators_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 100px;
+        width: 1050px;
+        height: 91px;
+
+    }
+
+    .drk_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 247px;
+        height: 60px;
+        padding: 0px 20px;
+        border: 2px solid var(--button-color);
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        position: relative;
+        text-align: center;
+        transition: background-color 1s ease, color 1.5s ease;
+        cursor: pointer;
+    }
+
+
+    .drk_button:hover,
+    .drk_button:focus {
+        background: linear-gradient(90deg, #ae48e9, transparent) #2196f3;
+    }
+
+    .drk_button.enroll_icon::before {
+        content: url("./Assets/Icons/rocket_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 35px;
+        transform: translateY(-60%);
+    }
+
+    .drk_button.enroll_icon {
+        padding-left: 45px;
+    }
+
+    .top_creators_headline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 703px;
+        height: 91px;
+    }
+
+    .top_creators_headline>h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+    }
+
+    .top_creators_headline>h4 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+    }
+
+    .creators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .creators_cards_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .artists_cards_row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 1050px;
+        height: 238px;
+    }
+
+    .artist_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        isolation: isolate;
+        width: 240px;
+        height: 238px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+    .artist_card:hover {
+        box-shadow: 0 0 11px rgba(166, 20, 202, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    .ranking_number {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        isolation: isolate;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 20px;
+        top: 18px;
+        background: var(--background-color);
+        border-radius: 20px;
+    }
+
+    .artist_info h5 {
+        width: 200px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 5px;
+    }
+
+    .artist_sales p {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: var(--text-color-artist);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .categories-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories_cards_container {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .category_cards_row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 1050px;
+        height: 316px;
+    }
+
+    .collection_name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 25px;
+        width: 240px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .category_card {
+        padding: 0px;
+        width: 240px;
+        height: 316px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+
+    .category_card:hover {
+        box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    /*End of Category section*/
+
+    .discover_nft {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .seeAll_btn {
+        width: 187px;
+    }
+
+    .seeAll_btn.enroll_icon::before {
+        content: url("./Assets/Icons/eye_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 45px;
+        transform: translateY(-60%);
+    }
+
+    .drk_button.enroll_icon {
+        padding-left: 45px;
+    }
+
+    .discover_nft_headline {
+        width: 763px;
+    }
+
+    .discover_nft_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 100px;
+    }
+
+    .nft_cards_container {
+        width: 1050px;
+        margin: auto;
+        padding: 0;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .nft_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 330px;
+        height: 469px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+    .nft_card:hover {
+        box-shadow: 0 0 11px rgba(166, 20, 202, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+
+    .nft_name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 5px;
+
+        width: 270px;
+        height: 60px;
+
+    }
+
+    .nft_artist {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        width: 270px;
+        height: 24px;
+    }
+
+    .nft_name>h5 {
+        width: 270px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .nft_artist>p {
+
+        width: 234px;
+        height: 22px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .additional_info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 270px;
+        height: 43px;
+
+    }
+
+    .nft_info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 25px;
+        gap: 25px;
+        width: 330px;
+        height: 173px;
+    }
+
+    .price>p:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        color: var(--text-color-artist);
+        width: 114px;
+        height: 13px;
+        margin-bottom: 8px;
+    }
+
+    .price>p:last-child {
+        font-family: 'Space Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+        width: 114px;
+        height: 22px;
+    }
+
+    .highest_bid>p:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        text-align: right;
+        color: var(--text-color-artist);
+        width: 135px;
+        height: 22px;
+    }
+
+    .highest_bid>p:last-child {
+        width: 135px;
+        height: 22px;
+        font-family: 'Space Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: var(--text-color);
+    }
+
+    /*End of Discover more NFTs section*/
+    .nft_highlight>img {
+        width: 100%;
+        height: 660px;
+        object-fit: cover;
+    }
+
+    /*End of NFT Highlights section*/
+    .subscribe_widget,
+    .how_it_works,
+    .info_cards {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .how_it_works_container,
+    .info_cards_container {
+        padding: 0;
+    }
+
+    .info_cards_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        width: 1050px;
+        height: 439px;
+        margin-top: 48px;
+        margin-bottom: 80px;
+    }
+
+    .info_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px 30px;
+        gap: 20px;
+        width: 330px;
+        height: 439px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: box-shadow 0.6s;
+        transition: 0.3s;
+    }
+
+    .info_card:hover {
+        box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    .card_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 270px;
+        height: 129px;
+    }
+
+    .card_details>h5 {
+        width: 270px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .card_details>p {
+        width: 270px;
+        height: 88px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .subscribe_widget {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px;
+        gap: 80px;
+        width: 1050px;
+        height: 430px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        margin-bottom: 80px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 425px;
+        height: 272px;
+    }
+
+    .right>h3 {
+        width: 425px;
+        height: 92px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+    }
+
+    .right>p {
+        width: 425px;
+        height: 70px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+    }
+
+    #email_input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 0px 16px 20px;
+        gap: 12px;
+        width: 425px;
+        height: 60px;
+        background: var(--text-color);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2B2B2B;
+    }
+
+    .subscribe_btn {
+        align-items: center;
+        padding: 0px 50px;
+        gap: 12px;
+        width: 211px;
+        height: 60px;
+        background: var(--button-color);
+        border-radius: 20px;
+        border: none;
+        position: absolute;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: background-color 1s ease, color 1.5s ease;
+    }
+
+    .subscribe_btn:hover,
+    .subscribe_btn:focus {
+        background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    }
+
+    .email_subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 40px;
+        outline: none;
+    }
+
+    .subscribe_btn.enroll_icon::before {
+        content: url("./Assets/Icons/envelope_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 45px;
+        transform: translateY(-60%);
+    }
+
+    .subscribe_btn.enroll_icon {
+        padding-left: 65px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .burger_icon {
+        display: initial;
+    }
+
+    nav {
+        padding: 15px 50px;
+    }
+
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar_container_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+    }
+
+    .navbar_container_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px
+    }
+
+    .navbar_container_left>.navbar_text {
+        width: 199.41px;
+        height: 19.8px;
+        left: 44px;
+        top: 8.6px;
+        color: var(--text-color);
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .links_container {
+        display: none;
+    }
+
+    .links_container>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 12px;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: hotPink;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .discover_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+        gap: 30px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 315px;
+    }
+
+
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+
+        width: 315px;
+    }
+
+    .discover_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 315px;
+        height: 154px;
+    }
+
+
+    .discover_text>h1 {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+
+    .discover_text>p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .button2 {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: -1px 50px;
+        gap: 12px;
+        width: 224px;
+        height: 60px;
+        background: var(--button-color);
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        position: relative;
+        cursor: pointer;
+        transition: background-color 1s ease, color 1.5s ease;
+    }
+
+    .button2:hover,
+    .button2:focus {
+        background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    }
+
+    .button2.enroll_icon::before {
+        content: url("./Assets/Icons/RocketLaunch.svg");
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+    }
+
+    .button2.enroll_icon {
+        padding-left: 60px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 330px;
+        height: 57px;
+        border-radius: 20px;
+
+    }
+
+    .info>.total_sale,
+    .info>.auctions,
+    .info>.artists {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 90px;
+        height: 57px;
+        border-radius: 20px;
+    }
+
+    .info>.total_sale>h4:first-child,
+    .info>.auctions>h4:first-child,
+    .info>.artists>h4:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    .info>.total_sale>h4:last-child,
+    .info>.auctions>h4:last-child,
+    .info>.artists>h4:last-child {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .right {
+        width: 330px;
+        height: 221px;
+        padding-left: 30px;
+    }
+
+    .right>img {
+        width: 100%;
+    }
+
+    .space_walking_info {
+        width: 100%;
+        background: var(--secondary-color);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .space_walking_info>h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        color: var(--text-color);
+    }
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 12px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    /*Trending Collection section*/
+
+    .trending_collection {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .trending_collection_container>.headline {
+        width: 1046px;
+        height: 91px;
+    }
+
+    .headline>h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    .trending_cards {
+        margin-bottom: 80px;
+    }
+
+    .main_card {
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+
+    .main_card:hover {
+        transform: scale(1.1);
+    }
+
+    .cards>img {
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+    }
+
+
+    .cards>img:hover {
+        transform: scale(1.1);
+    }
+
+    .headline>h4 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+        text-transform: capitalize;
+    }
+
+    .trending_cards_container {
+        margin-bottom: 80px;
+    }
+
+    .cards>img {
+        margin-right: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .main_card>img {
+        margin-right: 30px;
+    }
+
+    .main_card {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .dsgn_animals_text>h5,
+    .magic_mushrooms_text>h5,
+    .disco_machines_text>h5 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+        margin-top: 15px;
+    }
+
+    .mrfox,
+    .shroomie,
+    .robots {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .mrfox>p,
+    .shroomie>p,
+    .robots>p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .top_creators {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+        padding: 80px 0 60px 0;
+    }
+
+    .top_creators_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 100px;
+        width: 1050px;
+        height: 91px;
+
+    }
+
+    .drk_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 247px;
+        height: 60px;
+        padding: 0px 20px;
+        border: 2px solid var(--button-color);
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        position: relative;
+        text-align: center;
+        transition: background-color 1s ease, color 1.5s ease;
+        cursor: pointer;
+    }
+
+
+    .drk_button:hover,
+    .drk_button:focus {
+        background: linear-gradient(90deg, #ae48e9, transparent) #2196f3;
+    }
+
+    .drk_button.enroll_icon::before {
+        content: url("./Assets/Icons/rocket_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 35px;
+        transform: translateY(-60%);
+    }
+
+    .drk_button.enroll_icon {
+        padding-left: 45px;
+    }
+
+    .top_creators_headline {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 703px;
+        height: 91px;
+    }
+
+    .top_creators_headline>h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+    }
+
+    .top_creators_headline>h4 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+    }
+
+    .creators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .creators_cards_container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .artists_cards_row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 1050px;
+        height: 238px;
+    }
+
+    .artist_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        isolation: isolate;
+        width: 240px;
+        height: 238px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+    .artist_card:hover {
+        box-shadow: 0 0 11px rgba(166, 20, 202, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    .ranking_number {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        isolation: isolate;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 20px;
+        top: 18px;
+        background: var(--background-color);
+        border-radius: 20px;
+    }
+
+    .artist_info h5 {
+        width: 200px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 5px;
+    }
+
+    .artist_sales p {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: var(--text-color-artist);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .categories-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories_cards_container {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .category_cards_row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+        width: 1050px;
+        height: 316px;
+    }
+
+    .collection_name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 25px;
+        width: 240px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .category_card {
+        padding: 0px;
+        width: 240px;
+        height: 316px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+
+    .category_card:hover {
+        box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    /*End of Category section*/
+
+    .discover_nft {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .seeAll_btn {
+        width: 187px;
+    }
+
+    .seeAll_btn.enroll_icon::before {
+        content: url("./Assets/Icons/eye_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 45px;
+        transform: translateY(-60%);
+    }
+
+    .drk_button.enroll_icon {
+        padding-left: 45px;
+    }
+
+    .discover_nft_headline {
+        width: 763px;
+    }
+
+    .discover_nft_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 100px;
+    }
+
+    .nft_cards_container {
+        width: 1050px;
+        margin: auto;
+        padding: 0;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .nft_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 330px;
+        height: 469px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(190, 22, 22, 0.2);
+        transition: box-shadow 0.3s;
+        transition: 0.3s;
+    }
+
+    .nft_card:hover {
+        box-shadow: 0 0 11px rgba(166, 20, 202, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+
+    .nft_name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 5px;
+
+        width: 270px;
+        height: 60px;
+
+    }
+
+    .nft_artist {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        width: 270px;
+        height: 24px;
+    }
+
+    .nft_name>h5 {
+        width: 270px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .nft_artist>p {
+
+        width: 234px;
+        height: 22px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+    }
+
+    .additional_info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 270px;
+        height: 43px;
+
+    }
+
+    .nft_info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 25px;
+        gap: 25px;
+        width: 330px;
+        height: 173px;
+    }
+
+    .price>p:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        color: var(--text-color-artist);
+        width: 114px;
+        height: 13px;
+        margin-bottom: 8px;
+    }
+
+    .price>p:last-child {
+        font-family: 'Space Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--text-color);
+        width: 114px;
+        height: 22px;
+    }
+
+    .highest_bid>p:first-child {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        text-align: right;
+        color: var(--text-color-artist);
+        width: 135px;
+        height: 22px;
+    }
+
+    .highest_bid>p:last-child {
+        width: 135px;
+        height: 22px;
+        font-family: 'Space Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: var(--text-color);
+    }
+
+    /*End of Discover more NFTs section*/
+    .nft_highlight>img {
+        width: 100%;
+        height: 660px;
+        object-fit: cover;
+    }
+
+    /*End of NFT Highlights section*/
+    .subscribe_widget,
+    .how_it_works,
+    .info_cards {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .how_it_works_container,
+    .info_cards_container {
+        padding: 0;
+    }
+
+    .info_cards_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        width: 1050px;
+        height: 439px;
+        margin-top: 48px;
+        margin-bottom: 80px;
+    }
+
+    .info_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px 30px;
+        gap: 20px;
+        width: 330px;
+        height: 439px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: box-shadow 0.6s;
+        transition: 0.3s;
+    }
+
+    .info_card:hover {
+        box-shadow: 0 0 11px rgba(53, 6, 221, 0.2),
+            0 0 11px 5px rgba(85, 37, 216, 0.4) inset;
+        transform: scale(1.1);
+    }
+
+    .card_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 270px;
+        height: 129px;
+    }
+
+    .card_details>h5 {
+        width: 270px;
+        height: 31px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .card_details>p {
+        width: 270px;
+        height: 88px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .subscribe_widget {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px;
+        gap: 80px;
+        width: 1050px;
+        height: 430px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        margin-bottom: 80px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 425px;
+        height: 272px;
+    }
+
+    .right>h3 {
+        width: 425px;
+        height: 92px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        color: var(--text-color);
+    }
+
+    .right>p {
+        width: 425px;
+        height: 70px;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: var(--text-color);
+    }
+
+    #email_input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 0px 16px 20px;
+        gap: 12px;
+        width: 425px;
+        height: 60px;
+        background: var(--text-color);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2B2B2B;
+    }
+
+    .subscribe_btn {
+        align-items: center;
+        padding: 0px 50px;
+        gap: 12px;
+        width: 211px;
+        height: 60px;
+        background: var(--button-color);
+        border-radius: 20px;
+        border: none;
+        position: absolute;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: background-color 1s ease, color 1.5s ease;
+    }
+
+    .subscribe_btn:hover,
+    .subscribe_btn:focus {
+        background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    }
+
+    .email_subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 40px;
+        outline: none;
+    }
+
+    .subscribe_btn.enroll_icon::before {
+        content: url("./Assets/Icons/envelope_icon.svg");
+        position: absolute;
+        top: 60%;
+        left: 45px;
+        transform: translateY(-60%);
+    }
+
+    .subscribe_btn.enroll_icon {
+        padding-left: 65px;
+    }
 }

@@ -18,17 +18,7 @@ function showSuccessToast() {
         }, 500);
     }, 2000);
 }
-footer_button.addEventListener('click', function () {
-    const emailInput = document.getElementById('email_input');
-    const email = emailInput.value.trim();
 
-    if (validateEmail(email)) {
-        showSuccessToast();
-        emailInput.value = '';
-    } else {
-        showErrorToast();
-    }
-});
 function showErrorToast() {
     const toastContainer = document.getElementById('toast-container');
     const toastFooter = document.createElement('div');
@@ -42,3 +32,14 @@ function showErrorToast() {
         }, 300);
     }, 2000);
 }
+document.querySelector('').addEventListener('click', function () {
+    const emailInput = document.getElementById('email_input');
+    const email = emailInput.value.trim();
+
+    if (validateEmail(email)) {
+        showSuccessToast();
+        emailInput.value = '';
+    } else {
+        showErrorToast();
+    }
+});
