@@ -3,6 +3,9 @@ const createAccountButton = document.querySelector(".createBtn");
 createAccountButton.addEventListener("click", createAccount);
 
 function createAccount() {
+  console.log("allInputsValid", allInputsValid());
+  console.log("!isAnyInputEmpty", !isAnyInputEmpty());
+
   if (allInputsValid() && !isAnyInputEmpty()) {
     showToast("Account created successfully", "success");
   } else {
@@ -12,11 +15,45 @@ function createAccount() {
 
 function allInputsValid() {
   const isUsernameValid = validateUsername();
-  const isEmailValid = validateEmail();
+
+  emailInput.addEventListener("input", checkEmail);
+
+  function checkEmail() {
+    const emailInput = document.getElementById("emailAdress");
+    const emailErrorMessage = document.getElementById("email_error");
+
+    if (
+      emailInput.value.match(
+        /^[\w-]+(\.[\w-]+)*@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/
+      )
+    ) {
+      emailErrorMessage.innerHTML = "Valid email";
+      emailErrorMessage.classList.remove("invalid");
+      emailErrorMessage.classList.add("valid");
+      console.log("true email");
+      return true;
+    } else {
+      emailErrorMessage.innerHTML = "Please enter a valid email";
+      emailErrorMessage.classList.remove("valid");
+      emailErrorMessage.classList.add("invalid");
+      console.log("false email");
+      return false;
+    }
+  }
+
+  const isEmailValid = checkEmail();
+
   const isPasswordValid = validatePassword();
   const isConfirmPasswordValid = validateConfirmPassword();
 
-  return isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid;
+  console.log("isUsernameValid", isUsernameValid);
+  console.log("isEmailValid", isEmailValid);
+  console.log("isPasswordValid", isPasswordValid);
+  console.log("isConfirmPasswordValid", isConfirmPasswordValid);
+
+  return (
+    isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid
+  );
 }
 
 function isAnyInputEmpty() {
@@ -57,17 +94,47 @@ const emailErrorMessage = document.getElementById("email_error");
 
 emailInput.addEventListener("input", validateEmail);
 
-function validateEmail() {
-  if (!emailInput.value.match(/^[A-Za-z\._\-0-9][@][A-Za-z][\.][a-z]{3,6}$/)) {
-    emailErrorMessage.innerHTML = "Please enter a valid email";
-    emailErrorMessage.classList.remove("valid");
-    emailErrorMessage.classList.add("invalid");
-    return false;
-  } else {
+function checkEmail() {
+  const emailInput = document.getElementById("emailAdress");
+  const emailErrorMessage = document.getElementById("email_error");
+
+  if (
+    emailInput.value.match(
+      /^[\w-]+(\.[\w-]+)*@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/
+    )
+  ) {
     emailErrorMessage.innerHTML = "Valid email";
     emailErrorMessage.classList.remove("invalid");
     emailErrorMessage.classList.add("valid");
+    console.log("true email");
     return true;
+  } else {
+    emailErrorMessage.innerHTML = "Please enter a valid email";
+    emailErrorMessage.classList.remove("valid");
+    emailErrorMessage.classList.add("invalid");
+    console.log("false email");
+    return false;
+  }
+}
+
+function validateEmail() {
+  
+  if (
+    emailInput.value.match(
+      /^[\w-]+(\.[\w-]+)*@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,7}$/
+    )
+  ) {
+    emailErrorMessage.innerHTML = "Valid email";
+    emailErrorMessage.classList.remove("invalid");
+    emailErrorMessage.classList.add("valid");
+    console.log("true email");
+    return true;
+  } else {
+    emailErrorMessage.innerHTML = "Please enter a valid email";
+    emailErrorMessage.classList.remove("valid");
+    emailErrorMessage.classList.add("invalid");
+    console.log("false email");
+    return false;
   }
 }
 
@@ -91,7 +158,9 @@ function validatePassword() {
 }
 
 const confirmPasswordInput = document.getElementById("confirmPassword");
-const confirmPasswordErrorMessage = document.getElementById("confirmPassword_error");
+const confirmPasswordErrorMessage = document.getElementById(
+  "confirmPassword_error"
+);
 
 confirmPasswordInput.addEventListener("input", validateConfirmPassword);
 
@@ -130,7 +199,7 @@ function showToast(message, messageType) {
     toastMessage.innerHTML = `<i class="fas fa-times-circle"></i> ${message}`;
     toastContainer.classList.add("error");
   }
-  
+
   setTimeout(function () {
     toastContainer.classList.add("show");
     setTimeout(function () {

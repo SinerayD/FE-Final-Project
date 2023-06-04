@@ -998,6 +998,25 @@ a:hover {
 .subscribe_btn.enroll_icon {
     padding-left: 65px;
 }
+.right > img {
+    transform: rotateY(0deg);
+    animation: rotateAnimation 8s linear infinite;
+  }
+  
+  @keyframes rotateAnimation {
+    
+  }
+  
+
+.space_walking_info {
+	transform: rotateY(360deg);
+	animation: rotateAnimation 8s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(50deg);}
+}
 
 /*Toast message*/
 .email_subscribe {
@@ -1005,13 +1024,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-}
-
-#email_input {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
 }
 
 .subscribe_btn {
@@ -1218,7 +1230,7 @@ footer {
     margin-top: 25px;
 }
 
-#email_input {
+#email_input_footer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1299,7 +1311,6 @@ footer {
     display: none;
 }
 
-/*assddsdfghgnfngnmjkj,jhmhngfdfghjklkjhngbfvxdcfgdhjkl/kl.j,hj*/
 @media screen and (max-width: 1050px) {
     .burger_icon {
         display: initial;
@@ -1370,9 +1381,6 @@ footer {
     .button1 {
         display: none;
     }
-
-
-
     .container {
         display: flex;
         flex-direction: row;
@@ -1591,8 +1599,6 @@ footer {
         transition: box-shadow 0.3s;
         transition: 0.3s;
     }
-
-
     .main_card:hover {
         transform: scale(1.1);
     }
@@ -1601,8 +1607,6 @@ footer {
         box-shadow: 0 0 0 rgba(190, 22, 22, 0.8);
         transition: box-shadow 0.3s;
     }
-
-
     .cards>img:hover {
         transform: scale(1.1);
     }
@@ -2349,9 +2353,6 @@ footer {
         gap: 30px;
         width: 315px;
     }
-
-
-
     .left {
         display: flex;
         flex-direction: column;
