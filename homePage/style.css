@@ -951,6 +951,7 @@ a:hover {
     font-size: 16px;
     line-height: 140%;
     color: #2B2B2B;
+    outline: none;
 }
 
 .subscribe_btn {
@@ -997,25 +998,6 @@ a:hover {
 
 .subscribe_btn.enroll_icon {
     padding-left: 65px;
-}
-.right > img {
-    transform: rotateY(0deg);
-    animation: rotateAnimation 8s linear infinite;
-  }
-  
-  @keyframes rotateAnimation {
-    
-  }
-  
-
-.space_walking_info {
-	transform: rotateY(360deg);
-	animation: rotateAnimation 8s linear infinite;
-}
-
-@keyframes rotateAnimation {
-	from {transform: rotateY(0deg);}
-	to {transform: rotateY(50deg);}
 }
 
 /*Toast message*/

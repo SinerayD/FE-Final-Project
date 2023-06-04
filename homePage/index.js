@@ -50,7 +50,7 @@ document.querySelector('.subscribe_btn').addEventListener('click', function () {
     }
 });
 
-//Direct to artis page code
+//Artist Page navigation code
 const artistCards = document.querySelectorAll('.artist_card');
 
 artistCards.forEach(element => {
@@ -60,4 +60,9 @@ artistCards.forEach(element => {
     
 });
 
+//Sign Up button navigation page code
+const signUpButton = document.querySelector('.button1.enroll_icon');
 
+signUpButton.addEventListener('click', function () {
+    window.location.href = "../createAccount/index.html";
+});

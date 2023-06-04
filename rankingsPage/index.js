@@ -88,13 +88,6 @@ nftsSoldBtn.addEventListener("click", () => {
 });
 
 
-//Sign Up button navigation page code
-const signUpButton = document.querySelector('.button1.enroll_icon');
-
-signUpButton.addEventListener('click', function () {
-    window.location.href = "../createAccount/index.html";
-});
-
 const changeElement = document.getElementById("change");
 
 let isDescending = false;
@@ -119,3 +112,9 @@ changeElement.addEventListener("click", () => {
     tableRows.forEach(row => rankingsSection.appendChild(row));
 });
 
+//Sign Up button navigation page code
+const signUpButton = document.querySelector('.button1.enroll_icon');
+
+signUpButton.addEventListener('click', function () {
+    window.location.href = "../createAccount/index.html";
+});
